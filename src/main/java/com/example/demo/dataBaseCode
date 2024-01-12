@@ -1,0 +1,221 @@
+create table Jucatori (
+    JucatorUI varchar(10) primary key,
+    ClanUI varchar(8),
+    NumeUtilizator varchar(255),
+    Email varchar(255),
+    Nivel int,
+    PuncteExperienta int,
+    Inventar varchar(100),
+    MonedaVirtuala decimal,
+    Scoruri varchar(20),
+    IstoricChat varchar(100),
+    IstoricTranzactii varchar(50),
+    IstoricJoc varchar(150),
+    Feedback varchar(100)
+);
+
+drop table Jucatori;
+
+insert into Jucatori (NumeUtilizator, JucatorUI, ClanUI, Email, Nivel, PuncteExperienta, Inventar, MonedaVirtuala, Scoruri, IstoricChat, IstoricTranzactii, IstoricJoc, Feedback) values
+('Gamer01', '#QJL8UYVC0', '#CLN008', 'gamer01@example.com', 10, 2000, 'Arc, Săgeți', 150.00, 'Scor: 300', 'Chat: GG!', 'Tranzactie: Achizitie arc', 'Joc: Nivel 10 completat', 'Foarte captivant!'),
+('Player02', '#AB1C2D3E4', '#CLN001', 'player02@example.net', 8, 1200, 'Sword, Shield', 120.25, 'Scor: 250', 'Chat: Hai sa jucam!', 'Tranzactie: Vanzare sabie', 'Joc: Nivel 8 completat', 'Joc provocator'),
+('NoobMaster', '#XY9Z8W7V6','#CLN004' , 'noobmaster@example.org', 3, 300, 'Potion, Knife', 50.75, 'Scor: 100', 'Chat: Caut echipa', 'Tranzactie: Cumparare potiune', 'Joc: Nivel 3 completat', 'Mai trebuie îmbunătățiri'),
+('ProGamerX', '#KL5M6N7O8', '#CLN001', 'progamerx@example.com', 15, 3500, 'Excalibur, Armor', 200.00, 'Scor: 450', 'Chat: Buna ziua!', 'Tranzactie: Achizitie armura', 'Joc: Nivel 15 completat', 'Cel mai bun joc!'),
+('DragonSlayer', '#PQ1R2S3T4', '#CLN009', 'dragonslayer@example.net', 12, 2400, 'Bow, Arrows', 180.50, 'Scor: 320', 'Chat: Cine vrea duel?', 'Tranzactie: Achizitie arc', 'Joc: Nivel 12 completat', 'Foarte distractiv'),
+('ElfQueen', '#UV5W6X7Y8', '#CLN008' , 'elfqueen@example.org', 9, 1400, 'Magic Wand, Robe', 130.00, 'Scor: 260', 'Chat: Ajutor in nivelul 9', 'Tranzactie: Vanzare bagheta', 'Joc: Nivel 9 completat', 'Interesant și captivant'),
+('KnightRider', '#MN9O8P7Q6','#CLN008' ,  'knightrider@example.com', 7, 900, 'Lance, Helmet', 110.75, 'Scor: 210', 'Chat: Caut coechipier', 'Tranzactie: Achizitie lance', 'Joc: Nivel 7 completat', 'Foarte bun'),
+('ShadowThief', '#CD5E6F7G8','#CLN004' ,  'shadowthief@example.net', 5, 600, 'Dagger, Cloak', 80.00, 'Scor: 150', 'Chat: Vreau să fur inimile voastre', 'Tranzactie: Achizitie pelerina', 'Joc: Nivel 5 completat', 'Super joc'),
+('Wizard101', '#GH3I4J5K6', '' , 'wizard101@example.org', 11, 2200, 'Spell Book, Crystal Ball', 170.25, 'Scor: 310', 'Chat: Cine stie vraji noi?', 'Tranzactie: Achizitie carte de vraji', 'Joc: Nivel 11 completat', 'Magie pura'),
+('CyberPunk', '#MGV5SD8RS', '#CLN009' , 'cyberpunk@example.com', 6, 700, 'Laser Gun, NanoSuit', 90.50, 'Scor: 180', 'Chat: Bine ati venit in viitor', 'Tranzactie: Achizitie Laser Gun', 'Joc: Nivel 6 completat', 'Experienta futuristica impresionanta');
+
+
+insert into Jucatori (NumeUtilizator, JucatorUI, ClanUI, Email, Nivel, PuncteExperienta, Inventar, MonedaVirtuala, Scoruri, IstoricChat, IstoricTranzactii, IstoricJoc, Feedback)
+values
+('PlayerOne', '#AB1C2D3Z4', '#CLN006' , 'playerone@example.com', 5, 500, 'Sword, Shield', 75.00, 'Scor: 150', 'Chat: Hai sa incepem', 'Tranzactie: Achizitie sabie', 'Joc: Nivel 5 completat', 'Super joc!'),
+('GamerGirl', '#BC2D3E4F5', '#CLN001' , 'gamergirl@example.net', 7, 700, 'Bow, Arrows', 85.50, 'Scor: 200', 'Chat: Cine se alatura?', 'Tranzactie: Achizitie arc', 'Joc: Nivel 7 completat', 'Ador acest joc'),
+('DarkKnight', '#CD3E4F5G6', '#CLN006' , 'darkknight@example.org', 4, 400, 'Axe, Helmet', 65.25, 'Scor: 120', 'Chat: Caut dueluri', 'Tranzactie: Vanzare topor', 'Joc: Nivel 4 completat', 'Foarte provocator'),
+('ElfArcher', '#DE4F5G6H7', '' , 'elfarcher@example.com', 6, 600, 'Longbow, Quiver', 80.00, 'Scor: 180', 'Chat: Vreau să explorez', 'Tranzactie: Achizitie sageti', 'Joc: Nivel 6 completat', 'Experiență fantastică'),
+('WizardMaster', '#EF5G6H7I8', '#CLN001' , 'wizardmaster@example.net', 8, 800, 'Magic Staff, Spell Book', 90.75, 'Scor: 220', 'Chat: Cine vrea să învețe magie?', 'Tranzactie: Achizitie bagheta', 'Joc: Nivel 8 completat', 'Magie la fiecare pas');
+
+INSERT INTO Jucatori (JucatorUI, ClanUI, NumeUtilizator, Email, Nivel, PuncteExperienta, Inventar, MonedaVirtuala, Scoruri, IstoricChat, IstoricTranzactii, IstoricJoc, Feedback)
+VALUES ('#EF5G6HJTD', '#CLN011', 'MarcelaXYZ', 'marcelaeccc.r@example.com', 15, 12000, 'Sageata Magica, Armura Inexpugnabila', 300.25, '405', 'Chatul este extrem de activ', 'Tranzictie: Achizitie 1000 gemuri', 'Modificare de nickname', 'Extrem de pozitiv pentru joc');
+
+
+update Jucatori
+set Nivel = 10, PuncteExperienta = 2000, IstoricChat = 'Chat: Felitari jucatorului ShadowThief cu noile realizari'
+where JucatorUI = '#CD5E6F7G8';
+
+update Jucatori
+set Inventar = 'Bow, Arrows, Spell Book', IstoricChat = 'Chat: Jucatorul GamerGirl a primit o noua arma'
+where JucatorUI = '#BC2D3E4F5';
+
+update Jucatori
+set IstoricChat = 'Chat: DarkKnight iti accept provocarea*}}'
+where JucatorUI = '#DE4F5G6H7';
+
+update Jucatori
+set NumeUtilizator = 'MasterGame123', IstoricChat = 'Chat: Jucatorul ElfArcher si-a schimbat numele la MasterGame123'
+where JucatorUI = '#DE4F5G6H7';
+
+update Jucatori
+set IstoricChat = 'Chat: Felitari jucatorul KnightRider a primit rolul de admin'
+where JucatorUI = '#MN9O8P7Q6';
+
+update Jucatori
+set ClanUI = ''
+where JucatorUI = '#AB1C2D3Z4' or JucatorUI = '#EF5G6H7I8' or JucatorUI = '#QJL8UYVC0' or JucatorUI = '#KL5M6N7O8';
+
+# DELETE FROM Jucatori WHERE Nivel < 5;
+# DELETE FROM Jucatori WHERE Nivel < 4 AND PuncteExperienta < 400;
+# DELETE FROM Jucatori WHERE NumeUtilizator = 'Gamer01';
+# DELETE FROM Jucatori WHERE JucatorUI = '#KL5M6N7O8';
+# DELETE FROM Jucatori;
+
+select * from Jucatori;
+
+create table Clan (
+    ClanUI varchar(8) primary key,
+    NumeClan varchar(30),
+    NrMembri int,
+    Welcome varchar(100)
+);
+
+drop table Clan;
+
+insert into Clan (ClanUI, NumeClan, NrMembri, Welcome) values
+('#CLN001', 'Dragonii Albi', 3, 'Bine ați venit în clanul Dragonii Albi!'),
+('#CLN002', 'Vulturii Negri', 0, 'Alăturați-vă Vulturilor Negri pentru aventuri epice!'),
+('#CLN003', 'Spartanii', 0, 'Spartanii: luptăm până la ultimul om!'),
+('#CLN004', 'Gardienii Pădurii', 2, 'Gardienii Pădurii te așteaptă pentru a proteja natura!'),
+('#CLN005', 'Cavalerii Cerului', 0, 'Alăturați-vă Cavalerilor Cerului pentru a cuceri înălțimile!'),
+('#CLN006', 'Magicienii Nopții', 2, 'Descoperiți secretele magiei cu Magicienii Nopții!'),
+('#CLN007', 'Exploratorii', 0, 'Exploratorii: mereu în căutarea necunoscutului!'),
+('#CLN008', 'Războinicii Deșertului', 3, 'Războinicii Deșertului te așteaptă pentru a înfrunta căldura și nisipul!'),
+('#CLN009', 'Misticii', 2, 'Alăturați-vă Misticii pentru a descoperi misterele universului!'),
+('#CLN010', 'Templierii', 0, 'Templierii: onoare și curaj în fiecare luptă!');
+
+select * from Clan;
+
+create table ComponentaClan (
+    clanUI varchar(8) primary key ,
+    numeClan varchar(30),
+    membru1 varchar(25),
+    membru2 varchar(25),
+    membru3 varchar(25),
+    membru4 varchar(25),
+    membru5 varchar(25),
+    membru6 varchar(25),
+    membru7 varchar(25),
+    membru8 varchar(25),
+    membru9 varchar(25),
+    membru10 varchar(25)
+);
+
+drop table ComponentaClan;
+
+insert into ComponentaClan (clanUI, numeClan, membru1, membru2, membru3, membru4, membru5, membru6, membru7, membru8, membru9, membru10)values
+('#CLN001','Dragonii Albi', 'WizardMaster', 'GamerGirl', 'Player02', '', '', '', '', '', '', ''),
+('#CLN008','Războinicii Deșertului', 'MasterGame123', 'KnightRider', 'Gamer01', '', '', '', '', '', '', ''),
+('#CLN006','Magicienii Nopții', 'DarkKnight', 'PlayerOne', '', '', '', '', '', '', '', ''),
+('#CLN009','Misticii', 'CyberPunk', 'DragonSlayer', '', '', '', '', '', '', '', ''),
+('#CLN004','Gardienii Pădurii', 'ShadowThief', 'NoobMaster', '', '', '', '', '', '', '', '');
+
+select * from ComponentaClan;
+
+update ComponentaClan
+set membru4 = 'ProGamerX'
+where numeClan = 'Dragonii Albi';
+
+create table RecompenseClan(
+    numeClan varchar(30),
+    ClanUI varchar(8) primary key,
+    monedeRecompensa int
+);
+
+drop table RecompenseClan;
+
+insert into RecompenseClan(numeClan, ClanUI, monedeRecompensa)values
+('Dragonii Albi', '#CLN001', 5006.4),
+('Războinicii Deșertului', '#CLN008', 2024.1),
+('Magicienii Nopții', '#CLN006', 222.2),
+('Misticii', '#CLN009', 1000.0),
+('Gardienii Pădurii', '#CLN004', 2456.3);
+
+select * from Jucatori;
+select * from RecompenseClan;
+select * from ComponentaClan;
+
+alter table Jucatori
+add ClanUI varchar(8);
+
+alter table Jucatori
+add constraint fk_clan
+foreign key (ClanUI) references Clan(ClanUI);
+
+create table ComponentaClan (
+    ClanUI varchar(8),
+    JucatorUI varchar(10),
+    foreign key (ClanUI) references Clan(ClanUI),
+    foreign key (JucatorUI) references Jucatori(JucatorUI)
+);
+
+-- Jucătorii care sunt într-un clan
+select J.NumeUtilizator, J.Nivel, C.NumeClan
+from Jucatori J
+inner join Clan C on J.ClanUI = C.ClanUI;
+
+-- Clanuri și numărul de membri pe care îi au
+select C.NumeClan, COUNT(J.JucatorUI)
+from Clan C
+inner join Jucatori J on C.ClanUI = J.ClanUI
+group by C.NumeClan;
+
+-- Toti jucatorii indiferent dacă sunt într-un clan sau nu
+select J.NumeUtilizator, C.NumeClan
+from Jucatori J
+left join Clan C on J.ClanUI = C.ClanUI;
+
+-- Toate clanurilor, inclusiv cele fără membri
+select C.NumeClan, COUNT(J.JucatorUI) AS NrMembri
+from Clan C
+left join Jucatori J ON C.ClanUI = J.ClanUI
+group by C.NumeClan;
+
+-- Toate clanurile și jucătorii lor, inclusiv clanurile fără jucători
+select C.NumeClan, J.NumeUtilizator
+from Clan C
+right join Jucatori J on C.ClanUI = J.ClanUI;
+
+-- Toti jucătorii și clanurile lor, inclusiv pentru jucătorii care nu sunt în niciun clan
+select J.NumeUtilizator, J.Nivel, J.PuncteExperienta, J.Inventar,
+       case
+           when C.ClanUI is NULL then 'Fara Clan'
+           else C.NumeClan
+       end as NumeClan
+from Jucatori J
+right join Clan C on J.ClanUI = C.ClanUI;
+
+-- Full join = left join + right join
+-- Afisare clan pentru fiecare jucator in parte + arata nivelul la jucator
+select
+  IFNULL(C.NumeClan, 'Fără Clan') as NumeClan,
+  IFNULL(J.NumeUtilizator, 'Fără Jucători') as NumeUtilizator,
+  IFNULL(J.Nivel, '<null>') as Nivel
+from
+  Jucatori J
+left join Clan C on J.ClanUI = C.ClanUI
+union
+select
+  IFNULL(C.NumeClan, 'Fără Clan') as NumeClan,
+  IFNULL(J.NumeUtilizator, 'Fără Jucători') as NumeUtilizator,
+  IFNULL(J.Nivel, '<null>') as Nivel
+from
+  Jucatori J
+right join Clan C on J.ClanUI = C.ClanUI;
+
+
+select * from Jucatori where ClanUI = '#CLN001';
+select * from Jucatori;
+
+use InformatiiJucatori;
+show tables ;
